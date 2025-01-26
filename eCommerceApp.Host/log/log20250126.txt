@@ -1,0 +1,216 @@
+2025-01-26 21:58:21.126 +02:00 [INF] Application is building...
+2025-01-26 21:58:21.296 +02:00 [ERR] Application failed to start.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\Projects\eCommerceAppSolution\eCommerceApp.Host\Program.cs:line 38
+2025-01-26 21:58:34.150 +02:00 [INF] Application is building...
+2025-01-26 21:58:34.234 +02:00 [ERR] Application failed to start.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\Projects\eCommerceAppSolution\eCommerceApp.Host\Program.cs:line 38
+2025-01-26 22:04:07.121 +02:00 [INF] Application is building...
+2025-01-26 22:04:07.409 +02:00 [INF] User profile is available. Using 'C:\Users\ahmed salah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-26 22:04:07.480 +02:00 [INF] Application is running...
+2025-01-26 22:04:07.596 +02:00 [INF] Now listening on: http://localhost:5024
+2025-01-26 22:04:07.632 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-26 22:04:07.635 +02:00 [INF] Hosting environment: Development
+2025-01-26 22:04:07.636 +02:00 [INF] Content root path: D:\Projects\eCommerceAppSolution\eCommerceApp.Host
+2025-01-26 22:04:10.480 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5024/swagger/index.html - null null
+2025-01-26 22:04:10.723 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 52.3215 ms
+2025-01-26 22:04:10.728 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5024/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-26 22:04:10.731 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5024/swagger/index.html - 200 null text/html;charset=utf-8 251.7206ms
+2025-01-26 22:04:10.733 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5024/_framework/aspnetcore-browser-refresh.js - 200 13786 application/javascript; charset=utf-8 5.8755ms
+2025-01-26 22:04:10.742 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5024/_vs/browserLink - null null
+2025-01-26 22:04:10.779 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5024/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.7567ms
+2025-01-26 22:04:10.907 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5024/swagger/v1/swagger.json - null null
+2025-01-26 22:04:10.921 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.7529 ms
+2025-01-26 22:04:10.924 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5024/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.5316ms
+2025-01-26 22:04:39.716 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5024/api/Product/all - null null
+2025-01-26 22:04:39.731 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-01-26 22:04:39.736 +02:00 [INF] Executing endpoint 'eCommerceApp.Host.Controllers.ProductController.GetAll (eCommerceApp.Host)'
+2025-01-26 22:04:39.754 +02:00 [INF] Route matched with {action = "GetAll", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerceApp.Host.Controllers.ProductController (eCommerceApp.Host).
+2025-01-26 22:04:42.092 +02:00 [INF] Executed DbCommand (112ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Image], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+2025-01-26 22:04:42.156 +02:00 [INF] Executing NotFoundObjectResult, writing value of type 'eCommerceApp.Application.DTOs.Product.GetProduct[]'.
+2025-01-26 22:04:42.179 +02:00 [INF] Executed action eCommerceApp.Host.Controllers.ProductController.GetAll (eCommerceApp.Host) in 2421.4946ms
+2025-01-26 22:04:42.182 +02:00 [INF] Executed endpoint 'eCommerceApp.Host.Controllers.ProductController.GetAll (eCommerceApp.Host)'
+2025-01-26 22:04:42.186 +02:00 [INF] HTTP GET /api/Product/all responded 404 in 2461.4662 ms
+2025-01-26 22:04:42.195 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5024/api/Product/all - 404 null application/json; charset=utf-8 2479.5891ms
+2025-01-26 22:04:56.097 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5024/api/Category/all - null null
+2025-01-26 22:04:56.108 +02:00 [INF] Executing endpoint 'eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host)'
+2025-01-26 22:04:56.114 +02:00 [INF] Route matched with {action = "GetAll", controller = "Category", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerceApp.Host.Controllers.CategoryController (eCommerceApp.Host).
+2025-01-26 22:04:56.221 +02:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-01-26 22:04:56.227 +02:00 [INF] Executing NotFoundObjectResult, writing value of type 'eCommerceApp.Application.DTOs.Category.GetCategory[]'.
+2025-01-26 22:04:56.231 +02:00 [INF] Executed action eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host) in 115.6563ms
+2025-01-26 22:04:56.234 +02:00 [INF] Executed endpoint 'eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host)'
+2025-01-26 22:04:56.236 +02:00 [INF] HTTP GET /api/Category/all responded 404 in 128.6110 ms
+2025-01-26 22:04:56.240 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5024/api/Category/all - 404 null application/json; charset=utf-8 142.6557ms
+2025-01-26 22:05:17.027 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5024/api/Category/add - application/json 24
+2025-01-26 22:05:17.033 +02:00 [INF] CORS policy execution failed.
+2025-01-26 22:05:17.034 +02:00 [INF] Request origin http://localhost:5024 does not have permission to access the resource.
+2025-01-26 22:05:17.036 +02:00 [INF] Executing endpoint 'eCommerceApp.Host.Controllers.CategoryController.Add (eCommerceApp.Host)'
+2025-01-26 22:05:17.046 +02:00 [INF] Route matched with {action = "Add", controller = "Category", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(eCommerceApp.Application.DTOs.Category.CreateCategory) on controller eCommerceApp.Host.Controllers.CategoryController (eCommerceApp.Host).
+2025-01-26 22:05:17.409 +02:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Id], [Name])
+VALUES (@p0, @p1);
+2025-01-26 22:05:17.428 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceApp.Application.DTOs.ServiceResponse'.
+2025-01-26 22:05:17.433 +02:00 [INF] Executed action eCommerceApp.Host.Controllers.CategoryController.Add (eCommerceApp.Host) in 385.127ms
+2025-01-26 22:05:17.435 +02:00 [INF] Executed endpoint 'eCommerceApp.Host.Controllers.CategoryController.Add (eCommerceApp.Host)'
+2025-01-26 22:05:17.437 +02:00 [INF] HTTP POST /api/Category/add responded 200 in 401.1073 ms
+2025-01-26 22:05:17.441 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5024/api/Category/add - 200 null application/json; charset=utf-8 413.3008ms
+2025-01-26 22:05:22.905 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5024/api/Category/all - null null
+2025-01-26 22:05:22.909 +02:00 [INF] Executing endpoint 'eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host)'
+2025-01-26 22:05:22.910 +02:00 [INF] Route matched with {action = "GetAll", controller = "Category", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerceApp.Host.Controllers.CategoryController (eCommerceApp.Host).
+2025-01-26 22:05:22.916 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-01-26 22:05:22.936 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerceApp.Application.DTOs.Category.GetCategory, eCommerceApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-26 22:05:22.940 +02:00 [INF] Executed action eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host) in 28.4284ms
+2025-01-26 22:05:22.942 +02:00 [INF] Executed endpoint 'eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host)'
+2025-01-26 22:05:22.943 +02:00 [INF] HTTP GET /api/Category/all responded 200 in 34.3503 ms
+2025-01-26 22:05:22.945 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5024/api/Category/all - 200 null application/json; charset=utf-8 40.0032ms
+2025-01-26 22:06:04.570 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5024/api/Product/add - application/json 164
+2025-01-26 22:06:04.575 +02:00 [INF] CORS policy execution failed.
+2025-01-26 22:06:04.577 +02:00 [INF] Request origin http://localhost:5024 does not have permission to access the resource.
+2025-01-26 22:06:04.579 +02:00 [INF] Executing endpoint 'eCommerceApp.Host.Controllers.ProductController.Add (eCommerceApp.Host)'
+2025-01-26 22:06:04.584 +02:00 [INF] Route matched with {action = "Add", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(eCommerceApp.Application.DTOs.Product.CreateProduct) on controller eCommerceApp.Host.Controllers.ProductController (eCommerceApp.Host).
+2025-01-26 22:06:04.688 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [CategoryId], [Description], [Image], [Name], [Price], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-01-26 22:06:04.692 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceApp.Application.DTOs.ServiceResponse'.
+2025-01-26 22:06:04.694 +02:00 [INF] Executed action eCommerceApp.Host.Controllers.ProductController.Add (eCommerceApp.Host) in 107.8455ms
+2025-01-26 22:06:04.696 +02:00 [INF] Executed endpoint 'eCommerceApp.Host.Controllers.ProductController.Add (eCommerceApp.Host)'
+2025-01-26 22:06:04.697 +02:00 [INF] HTTP POST /api/Product/add responded 200 in 118.0632 ms
+2025-01-26 22:06:04.699 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5024/api/Product/add - 200 null application/json; charset=utf-8 128.5776ms
+2025-01-26 22:06:57.089 +02:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5024/api/Category/delte/ad483f77-9347-4274-01aa-08dd3e44c0ee - null null
+2025-01-26 22:06:57.092 +02:00 [INF] CORS policy execution failed.
+2025-01-26 22:06:57.093 +02:00 [INF] Request origin http://localhost:5024 does not have permission to access the resource.
+2025-01-26 22:06:57.095 +02:00 [INF] Executing endpoint 'eCommerceApp.Host.Controllers.CategoryController.Delete (eCommerceApp.Host)'
+2025-01-26 22:06:57.099 +02:00 [INF] Route matched with {action = "Delete", controller = "Category", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller eCommerceApp.Host.Controllers.CategoryController (eCommerceApp.Host).
+2025-01-26 22:06:57.303 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__get_Item_0
+2025-01-26 22:06:57.333 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Categories]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-01-26 22:06:57.343 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceApp.Application.DTOs.ServiceResponse'.
+2025-01-26 22:06:57.345 +02:00 [INF] Executed action eCommerceApp.Host.Controllers.CategoryController.Delete (eCommerceApp.Host) in 243.6796ms
+2025-01-26 22:06:57.346 +02:00 [INF] Executed endpoint 'eCommerceApp.Host.Controllers.CategoryController.Delete (eCommerceApp.Host)'
+2025-01-26 22:06:57.347 +02:00 [INF] HTTP DELETE /api/Category/delte/ad483f77-9347-4274-01aa-08dd3e44c0ee responded 200 in 252.1006 ms
+2025-01-26 22:06:57.351 +02:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5024/api/Category/delte/ad483f77-9347-4274-01aa-08dd3e44c0ee - 200 null application/json; charset=utf-8 261.989ms
+2025-01-26 22:07:04.295 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5024/api/Product/all - null null
+2025-01-26 22:07:04.298 +02:00 [INF] Executing endpoint 'eCommerceApp.Host.Controllers.ProductController.GetAll (eCommerceApp.Host)'
+2025-01-26 22:07:04.300 +02:00 [INF] Route matched with {action = "GetAll", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerceApp.Host.Controllers.ProductController (eCommerceApp.Host).
+2025-01-26 22:07:04.306 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Image], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+2025-01-26 22:07:04.308 +02:00 [INF] Executing NotFoundObjectResult, writing value of type 'eCommerceApp.Application.DTOs.Product.GetProduct[]'.
+2025-01-26 22:07:04.309 +02:00 [INF] Executed action eCommerceApp.Host.Controllers.ProductController.GetAll (eCommerceApp.Host) in 6.2958ms
+2025-01-26 22:07:04.311 +02:00 [INF] Executed endpoint 'eCommerceApp.Host.Controllers.ProductController.GetAll (eCommerceApp.Host)'
+2025-01-26 22:07:04.312 +02:00 [INF] HTTP GET /api/Product/all responded 404 in 13.9530 ms
+2025-01-26 22:07:04.314 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5024/api/Product/all - 404 null application/json; charset=utf-8 19.5142ms
+2025-01-26 22:07:13.929 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5024/api/Category/all - null null
+2025-01-26 22:07:13.931 +02:00 [INF] Executing endpoint 'eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host)'
+2025-01-26 22:07:13.933 +02:00 [INF] Route matched with {action = "GetAll", controller = "Category", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerceApp.Host.Controllers.CategoryController (eCommerceApp.Host).
+2025-01-26 22:07:13.938 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-01-26 22:07:13.941 +02:00 [INF] Executing NotFoundObjectResult, writing value of type 'eCommerceApp.Application.DTOs.Category.GetCategory[]'.
+2025-01-26 22:07:13.942 +02:00 [INF] Executed action eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host) in 6.028ms
+2025-01-26 22:07:13.943 +02:00 [INF] Executed endpoint 'eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host)'
+2025-01-26 22:07:13.944 +02:00 [INF] HTTP GET /api/Category/all responded 404 in 13.2256 ms
+2025-01-26 22:07:13.946 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5024/api/Category/all - 404 null application/json; charset=utf-8 17.2488ms
+2025-01-26 22:07:29.585 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5024/api/Category/add - application/json 20
+2025-01-26 22:07:29.589 +02:00 [INF] CORS policy execution failed.
+2025-01-26 22:07:29.590 +02:00 [INF] Request origin http://localhost:5024 does not have permission to access the resource.
+2025-01-26 22:07:29.593 +02:00 [INF] Executing endpoint 'eCommerceApp.Host.Controllers.CategoryController.Add (eCommerceApp.Host)'
+2025-01-26 22:07:29.594 +02:00 [INF] Route matched with {action = "Add", controller = "Category", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(eCommerceApp.Application.DTOs.Category.CreateCategory) on controller eCommerceApp.Host.Controllers.CategoryController (eCommerceApp.Host).
+2025-01-26 22:07:29.603 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Id], [Name])
+VALUES (@p0, @p1);
+2025-01-26 22:07:29.605 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceApp.Application.DTOs.ServiceResponse'.
+2025-01-26 22:07:29.606 +02:00 [INF] Executed action eCommerceApp.Host.Controllers.CategoryController.Add (eCommerceApp.Host) in 9.6863ms
+2025-01-26 22:07:29.607 +02:00 [INF] Executed endpoint 'eCommerceApp.Host.Controllers.CategoryController.Add (eCommerceApp.Host)'
+2025-01-26 22:07:29.608 +02:00 [INF] HTTP POST /api/Category/add responded 200 in 15.0543 ms
+2025-01-26 22:07:29.609 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5024/api/Category/add - 200 null application/json; charset=utf-8 23.6908ms
+2025-01-26 22:07:48.795 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5024/api/Category/all - null null
+2025-01-26 22:07:48.806 +02:00 [INF] Executing endpoint 'eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host)'
+2025-01-26 22:07:48.808 +02:00 [INF] Route matched with {action = "GetAll", controller = "Category", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerceApp.Host.Controllers.CategoryController (eCommerceApp.Host).
+2025-01-26 22:07:48.812 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-01-26 22:07:48.814 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerceApp.Application.DTOs.Category.GetCategory, eCommerceApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-26 22:07:48.816 +02:00 [INF] Executed action eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host) in 5.5273ms
+2025-01-26 22:07:48.818 +02:00 [INF] Executed endpoint 'eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host)'
+2025-01-26 22:07:48.819 +02:00 [INF] HTTP GET /api/Category/all responded 200 in 13.1068 ms
+2025-01-26 22:07:48.820 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5024/api/Category/all - 200 null application/json; charset=utf-8 24.6657ms
+2025-01-26 22:08:08.086 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5024/api/Product/add - application/json 164
+2025-01-26 22:08:08.095 +02:00 [INF] CORS policy execution failed.
+2025-01-26 22:08:08.096 +02:00 [INF] Request origin http://localhost:5024 does not have permission to access the resource.
+2025-01-26 22:08:08.100 +02:00 [INF] Executing endpoint 'eCommerceApp.Host.Controllers.ProductController.Add (eCommerceApp.Host)'
+2025-01-26 22:08:08.101 +02:00 [INF] Route matched with {action = "Add", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(eCommerceApp.Application.DTOs.Product.CreateProduct) on controller eCommerceApp.Host.Controllers.ProductController (eCommerceApp.Host).
+2025-01-26 22:08:08.108 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [CategoryId], [Description], [Image], [Name], [Price], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-01-26 22:08:08.110 +02:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceApp.Application.DTOs.ServiceResponse'.
+2025-01-26 22:08:08.112 +02:00 [INF] Executed action eCommerceApp.Host.Controllers.ProductController.Add (eCommerceApp.Host) in 8.3359ms
+2025-01-26 22:08:08.113 +02:00 [INF] Executed endpoint 'eCommerceApp.Host.Controllers.ProductController.Add (eCommerceApp.Host)'
+2025-01-26 22:08:08.114 +02:00 [INF] HTTP POST /api/Product/add responded 200 in 14.3009 ms
+2025-01-26 22:08:08.117 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5024/api/Product/add - 200 null application/json; charset=utf-8 31.3726ms
+2025-01-26 22:08:17.063 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5024/api/Category/all - null null
+2025-01-26 22:08:17.067 +02:00 [INF] Executing endpoint 'eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host)'
+2025-01-26 22:08:17.069 +02:00 [INF] Route matched with {action = "GetAll", controller = "Category", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerceApp.Host.Controllers.CategoryController (eCommerceApp.Host).
+2025-01-26 22:08:17.073 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-01-26 22:08:17.076 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerceApp.Application.DTOs.Category.GetCategory, eCommerceApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-26 22:08:17.078 +02:00 [INF] Executed action eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host) in 7.648ms
+2025-01-26 22:08:17.080 +02:00 [INF] Executed endpoint 'eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host)'
+2025-01-26 22:08:17.081 +02:00 [INF] HTTP GET /api/Category/all responded 200 in 13.7694 ms
+2025-01-26 22:08:17.084 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5024/api/Category/all - 200 null application/json; charset=utf-8 20.8134ms
+2025-01-26 22:08:20.994 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5024/api/Category/all - null null
+2025-01-26 22:08:20.997 +02:00 [INF] Executing endpoint 'eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host)'
+2025-01-26 22:08:20.999 +02:00 [INF] Route matched with {action = "GetAll", controller = "Category", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerceApp.Host.Controllers.CategoryController (eCommerceApp.Host).
+2025-01-26 22:08:21.005 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-01-26 22:08:21.007 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerceApp.Application.DTOs.Category.GetCategory, eCommerceApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-26 22:08:21.009 +02:00 [INF] Executed action eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host) in 6.6748ms
+2025-01-26 22:08:21.010 +02:00 [INF] Executed endpoint 'eCommerceApp.Host.Controllers.CategoryController.GetAll (eCommerceApp.Host)'
+2025-01-26 22:08:21.011 +02:00 [INF] HTTP GET /api/Category/all responded 200 in 13.9316 ms
+2025-01-26 22:08:21.013 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5024/api/Category/all - 200 null application/json; charset=utf-8 18.7158ms
+2025-01-26 22:08:41.232 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5024/api/Category/update - application/json 73
+2025-01-26 22:08:41.236 +02:00 [INF] CORS policy execution failed.
+2025-01-26 22:08:41.237 +02:00 [INF] Request origin http://localhost:5024 does not have permission to access the resource.
+2025-01-26 22:08:41.238 +02:00 [INF] Executing endpoint 'eCommerceApp.Host.Controllers.CategoryController.Update (eCommerceApp.Host)'
+2025-01-26 22:08:41.242 +02:00 [INF] Route matched with {action = "Update", controller = "Category", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(eCommerceApp.Application.DTOs.Category.UpdateCategory) on controller eCommerceApp.Host.Controllers.CategoryController (eCommerceApp.Host).
+2025-01-26 22:08:41.251 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-01-26 22:08:41.263 +02:00 [INF] Executed action eCommerceApp.Host.Controllers.CategoryController.Update (eCommerceApp.Host) in 19.4457ms
+2025-01-26 22:08:41.265 +02:00 [INF] Executed endpoint 'eCommerceApp.Host.Controllers.CategoryController.Update (eCommerceApp.Host)'
+2025-01-26 22:08:41.267 +02:00 [INF] HTTP PUT /api/Category/update responded 400 in 29.0741 ms
+2025-01-26 22:08:41.269 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5024/api/Category/update - 400 null application/problem+json; charset=utf-8 36.7618ms
