@@ -15,7 +15,6 @@ Log.Logger.Information("Application is building...");
 
 // Add services to the container.
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -48,7 +47,7 @@ try
     }
     app.UserInfrastructureService();
     app.UseHttpsRedirection();
-
+    
     app.UseAuthorization();
 
     app.MapControllers();

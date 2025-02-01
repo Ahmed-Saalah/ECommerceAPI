@@ -1,8 +1,10 @@
 ﻿using eCommerceApp.Application.Mapping;
 using eCommerceApp.Application.Services.Implemetations;
 using eCommerceApp.Application.Services.Implemetations.Authentication;
+using eCommerceApp.Application.Services.Implemetations.Cart;
 using eCommerceApp.Application.Services.Interfaces;
 using eCommerceApp.Application.Services.Interfaces.Authentication;
+using eCommerceApp.Application.Services.Interfaces.Cart;
 using eCommerceApp.Application.Validation;
 using eCommerceApp.Application.Validation.Authentication;
 using FluentValidation;
@@ -13,8 +15,7 @@ namespace eCommerceApp.Application.DependancyInjection
 {
     public static class ServiceContainer
     {
-        public static IServiceCollection AddApplicationService
-            (this IServiceCollection services)
+        public static IServiceCollection AddApplicationService(this IServiceCollection services)
         {
             services.AddAutoMapper(typeof(MappingConfig));
             services.AddScoped<IProductService, ProductService>();
@@ -23,6 +24,8 @@ namespace eCommerceApp.Application.DependancyInjection
             services.AddValidatorsFromAssemblyContaining<CreateUserValidator>();
             services.AddScoped<IValidationService, ValidationService>();
             services.AddScoped<IAuthenticationService, AuthenticationService>();
+            services.AddScoped<IPaymentMethodService, PaymentMethodService>();
+            services.AddScoped<ICartService, CartService>();
             return services;    
         }
     }

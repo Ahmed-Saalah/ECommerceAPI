@@ -1,8 +1,5 @@
 ﻿using eCommerceApp.Application.DTOs.Category;
-using eCommerceApp.Application.DTOs.Product;
-using eCommerceApp.Application.Services.Implemetations;
 using eCommerceApp.Application.Services.Interfaces;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace eCommerceApp.Host.Controllers

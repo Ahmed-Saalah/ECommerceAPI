@@ -34,3 +34,9 @@ artifacts/
 appsettings*.json
 appsettings*.Development.json
 appsettings*.Production.json
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates

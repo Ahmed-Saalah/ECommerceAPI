@@ -21,6 +21,7 @@ namespace eCommerceApp.Application.Services.Implemetations.Authentication
         {
             var _validationResult = await validationService
                 .ValidateAsync(user, createUserValidator);
+
             if (!_validationResult.Success)
                 return _validationResult;
 
@@ -29,6 +30,7 @@ namespace eCommerceApp.Application.Services.Implemetations.Authentication
             mappedModel.PasswordHash = user.Password;
 
             var result = await userManagement.CreateUser(mappedModel);
+
             if (!result)
                 return new ServiceResponse { Message = "Email might be already in use or unknown error occured" };
 

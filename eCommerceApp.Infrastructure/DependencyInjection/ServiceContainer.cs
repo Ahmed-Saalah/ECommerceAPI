@@ -25,8 +25,7 @@ namespace eCommerceApp.Infrastructure.DependencyInjection
 {
     public static class ServiceContainer
     {
-        public static IServiceCollection AddInfrastructureService
-            (this IServiceCollection services, IConfiguration config) 
+        public static IServiceCollection AddInfrastructureService(this IServiceCollection services, IConfiguration config) 
         {
             string connectionString = "Defult";
             services.AddDbContext<AppDbContext>(option =>
@@ -81,7 +80,7 @@ namespace eCommerceApp.Infrastructure.DependencyInjection
             services.AddScoped<IRoleManagement, RoleManagement>();
             services.AddScoped<IPaymentMethod, PaymentMethodRepository>();
             services.AddScoped<IPaymentService, StripePaymentService>();
-
+            services.AddScoped<ICart, CartRepository>();
             Stripe.StripeConfiguration.ApiKey = config["Stripe:SecretKey"];
             return services;
         }
